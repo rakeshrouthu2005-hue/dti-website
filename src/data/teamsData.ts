@@ -27,7 +27,7 @@ export const teamsData: Team[] = [
     progress: 85,
     leader: {
       id: 1,
-      name: "A Divya Sri",
+      name: "Leader 1",
       role: "23KD1A0201",
       image: "#"
     },
@@ -54,7 +54,7 @@ export const teamsData: Team[] = [
     progress: 72,
     leader: {
       id: 5,
-      name: "B Sai Samanvitha",
+      name: "Leader 2",
       role: "23KD1A0214",
       image: "#"
     },
@@ -81,7 +81,7 @@ export const teamsData: Team[] = [
     progress: 60,
     leader: {
       id: 8,
-      name: "G Hyma",
+      name: "Leader 3",
       role: "23KD1A0234",
       image: "#"
     },
@@ -108,7 +108,7 @@ export const teamsData: Team[] = [
     progress: 45,
     leader: {
       id: 11,
-      name: "K Ramya",
+      name: "Leader 4",
       role: "23KD1A0253",
       image: "#"
     },
@@ -135,7 +135,7 @@ export const teamsData: Team[] = [
     progress: 65,
     leader: {
       id: 14,
-      name: "G Pavani",
+      name: "Leader 5",
       role: "23KD1A0238",
       image: "#"
     },
@@ -162,7 +162,7 @@ export const teamsData: Team[] = [
     progress: 55,
     leader: {
       id: 17,
-      name: "J Gayatri",
+      name: "Leader 6",
       role: "23KD1A0246",
       image: "#"
     },
@@ -189,7 +189,7 @@ export const teamsData: Team[] = [
     progress: 80,
     leader: {
       id: 20,
-      name: "G Anjali",
+      name: "Leader 7",
       role: "23KD1A0233",
       image: "#"
     },
@@ -216,7 +216,7 @@ export const teamsData: Team[] = [
     progress: 30,
     leader: {
       id: 23,
-      name: "Ch Hemalatha",
+      name: "Leader 8",
       role: "23KD1A0224",
       image: "#"
     },
@@ -243,7 +243,7 @@ export const teamsData: Team[] = [
     progress: 48,
     leader: {
       id: 26,
-      name: "K Vasavi",
+      name: "Leader 9",
       role: "23KD1A0251",
       image: "#"
     },
@@ -270,7 +270,7 @@ export const teamsData: Team[] = [
     progress: 70,
     leader: {
       id: 29,
-      name: "Ch Pujitha",
+      name: "Leader 1",
       role: "23KD1A0222",
       image: "#"
     },
@@ -297,7 +297,7 @@ export const teamsData: Team[] = [
     progress: 35,
     leader: {
       id: 32,
-      name: "A Rupa Rani",
+      name: "Leader 2",
       role: "24KD5A0202",
       image: "#"
     },
@@ -324,7 +324,7 @@ export const teamsData: Team[] = [
     progress: 55,
     leader: {
       id: 35,
-      name: "G Tarun Sai",
+      name: "Leader 3",
       role: "23KD1A0237",
       image: "#"
     },
@@ -351,7 +351,7 @@ export const teamsData: Team[] = [
     progress: 100,
     leader: {
       id: 38,
-      name: "Ch Sohitha Sai",
+      name: "Leader 4",
       role: "23KD1A0219",
       image: "#"
     },
@@ -378,7 +378,7 @@ export const teamsData: Team[] = [
     progress: 75,
     leader: {
       id: 41,
-      name: "K Sandeep Babu",
+      name: "Leader 5",
       role: "23KD1A0257",
       image: "#"
     },
@@ -405,7 +405,7 @@ export const teamsData: Team[] = [
     progress: 80,
     leader: {
       id: 44,
-      name: "Ch Hemanth Kumar",
+      name: "Leader 6",
       role: "23KD1A0220",
       image: "#"
     },
@@ -432,7 +432,7 @@ export const teamsData: Team[] = [
     progress: 42,
     leader: {
       id: 47,
-      name: "G Kavitha",
+      name: "Leader 7",
       role: "23KD1A0239",
       image: "#"
     },
@@ -459,7 +459,7 @@ export const teamsData: Team[] = [
     progress: 65,
     leader: {
       id: 50,
-      name: "M Adhi Lakshmi",
+      name: "Leader 8",
       role: "23KD1A0264",
       image: "#"
     },
@@ -486,7 +486,7 @@ export const teamsData: Team[] = [
     progress: 50,
     leader: {
       id: 53,
-      name: "Leader Name",
+      name: "Leader 9",
       role: "Sample Role",
       image: "#"
     },
