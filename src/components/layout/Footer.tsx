@@ -2,7 +2,6 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { Mail, Phone, MapPin, ExternalLink } from 'lucide-react';
-import FooterAdminLink from '../FooterAdminLink';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -109,7 +108,6 @@ const Footer: React.FC = () => {
               <p>© {currentYear} Lendi Institute of Engineering & Technology. All rights reserved.</p>
               <p>Developed by Hemanth Kumar Chandaka - Department of EEE-A, II Year</p>
             </div>
-            <FooterAdminLink />
           </div>
         </div>
       </div>

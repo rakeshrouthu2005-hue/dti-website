@@ -17,14 +17,6 @@ const Presentations = lazy(() => import("./pages/Presentations"));
 const About = lazy(() => import("./pages/About"));
 const SmartAssessment = lazy(() => import("./pages/SmartAssessment"));
 const NotFound = lazy(() => import("./pages/NotFound"));
-const Admin = lazy(() => import("./pages/Admin"));
-const AdminDashboard = lazy(() => import("./pages/AdminDashboard"));
-const StudentLogin = lazy(() => import("./pages/StudentLogin"));
-const TeamDashboard = lazy(() => import("./pages/TeamDashboard"));
-
-// Import Admin context
-import { AdminProvider } from "./context/AdminContext";
-import ProtectedRoute from "./components/auth/ProtectedRoute";
 
 // Enhanced query client with better performance settings
 const queryClient = new QueryClient({
@@ -50,36 +42,23 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <HelmetProvider>
-        <AdminProvider>
-          <TooltipProvider>
-            <Toaster />
-            <Sonner />
-            <BrowserRouter>
-              <Suspense fallback={<PageLoader />}>
-                <Routes>
-                  <Route path="/" element={<Index />} />
-                  <Route path="/smart-assessment" element={<SmartAssessment />} />
-                  <Route path="/teams" element={<Teams />} />
-                  <Route path="/team/:id" element={<TeamDetail />} />
-                  <Route path="/presentations" element={<Presentations />} />
-                  <Route path="/about" element={<About />} />
-                  <Route path="/student-login" element={<StudentLogin />} />
-                  <Route path="/dashboard/:teamId" element={<TeamDashboard />} />
-                  <Route path="/admin" element={<Admin />} />
-                  <Route 
-                    path="/admin/dashboard" 
-                    element={
-                      <ProtectedRoute>
-                        <AdminDashboard />
-                      </ProtectedRoute>
-                    } 
-                  />
-                  <Route path="*" element={<NotFound />} />
-                </Routes>
-              </Suspense>
-            </BrowserRouter>
-          </TooltipProvider>
-        </AdminProvider>
+        <TooltipProvider>
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Suspense fallback={<PageLoader />}>
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/smart-assessment" element={<SmartAssessment />} />
+                <Route path="/teams" element={<Teams />} />
+                <Route path="/team/:id" element={<TeamDetail />} />
+                <Route path="/presentations" element={<Presentations />} />
+                <Route path="/about" element={<About />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </Suspense>
+          </BrowserRouter>
+        </TooltipProvider>
       </HelmetProvider>
     </QueryClientProvider>
   );

@@ -95,16 +95,6 @@ const Navbar: React.FC = () => {
             Teams
           </NavLink>
           <NavLink 
-            to="/student-login" 
-            className={({ isActive }) => cn(
-              'text-gray-700 hover:text-blue-900 font-medium flex items-center gap-1',
-              isActive && 'text-blue-900 font-semibold'
-            )}
-          >
-            <LogIn size={16} />
-            Student Login
-          </NavLink>
-          <NavLink 
             to="/about" 
             className={({ isActive }) => cn(
               'text-gray-700 hover:text-blue-900 font-medium',
@@ -113,7 +103,6 @@ const Navbar: React.FC = () => {
           >
             About
           </NavLink>
-          <NavbarAdminLink />
         </nav>
 
         <button
@@ -155,16 +144,6 @@ const Navbar: React.FC = () => {
               )}
             >
               Teams
-            </NavLink>
-            <NavLink 
-              to="/student-login" 
-              className={({ isActive }) => cn(
-                'text-gray-700 hover:text-blue-900 font-medium py-2 flex items-center gap-2',
-                isActive && 'text-blue-900 font-semibold'
-              )}
-            >
-              <LogIn size={16} />
-              Student Login
             </NavLink>
             <NavLink 
               to="/about" 
