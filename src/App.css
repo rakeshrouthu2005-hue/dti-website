@@ -1,0 +1,94 @@
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em rgba(79, 70, 229, 0.7));
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em rgba(111, 76, 255, 0.7));
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  transition: all 0.3s ease;
+  border-radius: var(--radius);
+  border: 1px solid rgba(var(--card), 0.1);
+}
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px -5px rgba(79, 70, 229, 0.08);
+}
+
+.read-the-docs {
+  color: #888;
+  transition: color 0.3s ease;
+}
+.read-the-docs:hover {
+  color: hsl(var(--accent));
+}
+
+/* Enhanced smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Modern focus styles */
+:focus {
+  outline: 2px solid hsl(var(--accent) / 0.5);
+  outline-offset: 2px;
+}
+
+/* Enhanced selection styles */
+::selection {
+  background-color: hsl(var(--accent) / 0.2);
+  color: hsl(var(--accent));
+}
+
+/* Subtle section transitions */
+section {
+  transition: opacity 0.5s ease;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--muted-foreground) / 0.3);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted-foreground) / 0.5);
+}

@@ -1,0 +1,23 @@
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Specify sitemap location
+Sitemap: https://834cccac-1103-4297-8b78-b91f502e1a6d.lovableproject.com/sitemap.xml
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Disallow duplicate content paths or admin areas if needed
+# Disallow: /admin/
