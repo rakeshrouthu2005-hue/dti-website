@@ -235,7 +235,7 @@ const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialPro
             <div className="flex items-center gap-1">
               <Award size={14} className="text-yellow-500" />
               <span className="font-medium">{team.leader.name}</span>
-              <span className="text-xs opacity-70">({team.leader.role})</span>
+              {team.leader.role && <span className="text-xs opacity-70">({team.leader.role})</span>}
             </div>
             {team.leader.rating && team.leader.rating > 0 && (
               <div className="ml-5 mt-1">

@@ -28,7 +28,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 1,
       name: "Leader 1",
-      role: "23KD1A0201",
+      role: "",
       image: "#"
     },
     members: [
@@ -55,7 +55,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 5,
       name: "Leader 2",
-      role: "23KD1A0214",
+      role: "",
       image: "#"
     },
     members: [
@@ -82,7 +82,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 8,
       name: "Leader 3",
-      role: "23KD1A0234",
+      role: "",
       image: "#"
     },
     members: [
@@ -109,7 +109,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 11,
       name: "Leader 4",
-      role: "23KD1A0253",
+      role: "",
       image: "#"
     },
     members: [
@@ -136,7 +136,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 14,
       name: "Leader 5",
-      role: "23KD1A0238",
+      role: "",
       image: "#"
     },
     members: [
@@ -163,7 +163,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 17,
       name: "Leader 6",
-      role: "23KD1A0246",
+      role: "",
       image: "#"
     },
     members: [
@@ -190,7 +190,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 20,
       name: "Leader 7",
-      role: "23KD1A0233",
+      role: "",
       image: "#"
     },
     members: [
@@ -217,7 +217,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 23,
       name: "Leader 8",
-      role: "23KD1A0224",
+      role: "",
       image: "#"
     },
     members: [
@@ -244,7 +244,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 26,
       name: "Leader 9",
-      role: "23KD1A0251",
+      role: "",
       image: "#"
     },
     members: [
@@ -271,7 +271,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 29,
       name: "Leader 1",
-      role: "23KD1A0222",
+      role: "",
       image: "#"
     },
     members: [
@@ -325,7 +325,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 35,
       name: "Leader 3",
-      role: "23KD1A0237",
+      role: "",
       image: "#"
     },
     members: [
@@ -352,7 +352,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 38,
       name: "Leader 4",
-      role: "23KD1A0219",
+      role: "",
       image: "#"
     },
     members: [
@@ -379,7 +379,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 41,
       name: "Leader 5",
-      role: "23KD1A0257",
+      role: "",
       image: "#"
     },
     members: [
@@ -406,7 +406,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 44,
       name: "Leader 6",
-      role: "23KD1A0220",
+      role: "",
       image: "#"
     },
     members: [
@@ -433,7 +433,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 47,
       name: "Leader 7",
-      role: "23KD1A0239",
+      role: "",
       image: "#"
     },
     members: [
@@ -460,7 +460,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 50,
       name: "Leader 8",
-      role: "23KD1A0264",
+      role: "",
       image: "#"
     },
     members: [
@@ -487,7 +487,7 @@ export const teamsData: Team[] = [
     leader: {
       id: 53,
       name: "Leader 9",
-      role: "Sample Role",
+      role: "",
       image: "#"
     },
     members: [
