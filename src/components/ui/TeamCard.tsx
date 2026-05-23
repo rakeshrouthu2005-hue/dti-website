@@ -15,10 +15,11 @@ interface TeamCardProps {
   progress: number;
   className?: string;
   placeholder?: boolean;
+  displayId?: number;
 }
 
 // Memoize the TeamCard component to prevent unnecessary re-renders
-const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialProgress, className, placeholder }) => {
+const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialProgress, className, placeholder, displayId }) => {
   const navigate = useNavigate();
   const [progress, setProgress] = useState(initialProgress);
   const [team, setTeam] = useState(null);
@@ -226,7 +227,7 @@ const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialPro
     >
       <div className="space-y-4">
         <div className="min-h-[40px] flex items-start">
-          <h3 className="text-lg font-medium leading-tight">Team {id}: {name}</h3>
+          <h3 className="text-lg font-medium leading-tight">Team {displayId || id}: {name}</h3>
         </div>
         
         {team && (

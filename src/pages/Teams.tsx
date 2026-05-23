@@ -122,6 +122,7 @@ const Teams = () => {
                       <TeamCard
                         key={`eee-a-team-${team.id}`}
                         id={team.id}
+                        displayId={idx + 1}
                         name={team.name}
                         progress={team.progress}
                       />
@@ -142,6 +143,7 @@ const Teams = () => {
                       <TeamCard
                         key={`eee-b-team-${team.id}`}
                         id={team.id}
+                        displayId={idx + 1}
                         name={team.name}
                         progress={team.progress}
                       />

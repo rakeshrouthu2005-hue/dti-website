@@ -29,7 +29,7 @@ export const teamsData: Team[] = [
       id: 1,
       name: "A Divya Sri",
       role: "23KD1A0201",
-      image: "/team_images/23KD1A0201.jpg"
+      image: "#"
     },
     members: [
       { id: 101, name: 'Person 1', role: '', image: '' },
@@ -42,8 +42,8 @@ export const teamsData: Team[] = [
       { id: 108, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1548533701-a0afe9c598f2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2787&q=80",
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -56,7 +56,7 @@ export const teamsData: Team[] = [
       id: 5,
       name: "B Sai Samanvitha",
       role: "23KD1A0214",
-      image: "/team_images/23KD1A0214.jpg"
+      image: "#"
     },
     members: [
       { id: 201, name: 'Person 1', role: '', image: '' },
@@ -69,8 +69,8 @@ export const teamsData: Team[] = [
       { id: 208, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1576086213369-97a306d36557?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1180&q=80",
-      "https://images.unsplash.com/photo-1559447618-6c254f27ed9c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -83,7 +83,7 @@ export const teamsData: Team[] = [
       id: 8,
       name: "G Hyma",
       role: "23KD1A0234",
-      image: "/team_images/23KD1A0234.jpg"
+      image: "#"
     },
     members: [
       { id: 301, name: 'Person 1', role: '', image: '' },
@@ -96,8 +96,8 @@ export const teamsData: Team[] = [
       { id: 308, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1485827404606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1597662942557-4087855bfcfe?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -110,7 +110,7 @@ export const teamsData: Team[] = [
       id: 11,
       name: "K Ramya",
       role: "23KD1A0253",
-      image: "/team_images/23KD1A0253.jpg"
+      image: "#"
     },
     members: [
       { id: 401, name: 'Person 1', role: '', image: '' },
@@ -123,8 +123,8 @@ export const teamsData: Team[] = [
       { id: 408, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1558537348-c0f8e733989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80",
-      "https://images.unsplash.com/photo-1601436575544-58d1011d0023?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -137,7 +137,7 @@ export const teamsData: Team[] = [
       id: 14,
       name: "G Pavani",
       role: "23KD1A0238",
-      image: "/team_images/23KD1A0238.jpg"
+      image: "#"
     },
     members: [
       { id: 501, name: 'Person 1', role: '', image: '' },
@@ -150,8 +150,8 @@ export const teamsData: Team[] = [
       { id: 508, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1625246333195-78d9c38ad449?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1500651230702-0e2d8a49d4ad?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -164,7 +164,7 @@ export const teamsData: Team[] = [
       id: 17,
       name: "J Gayatri",
       role: "23KD1A0246",
-      image: "/team_images/23KD1A0246.jpg"
+      image: "#"
     },
     members: [
       { id: 601, name: 'Person 1', role: '', image: '' },
@@ -177,8 +177,8 @@ export const teamsData: Team[] = [
       { id: 608, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1501504905252-473c47e087f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -191,7 +191,7 @@ export const teamsData: Team[] = [
       id: 20,
       name: "G Anjali",
       role: "23KD1A0233",
-      image: "/team_images/23KD1A0233.jpg"
+      image: "#"
     },
     members: [
       { id: 701, name: 'Person 1', role: '', image: '' },
@@ -204,8 +204,8 @@ export const teamsData: Team[] = [
       { id: 708, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1604187351574-c75ca79f5807?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1611284446314-60a58ac0deb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -218,7 +218,7 @@ export const teamsData: Team[] = [
       id: 23,
       name: "Ch Hemalatha",
       role: "23KD1A0224",
-      image: "/team_images/23KD1A0224.jpg"
+      image: "#"
     },
     members: [
       { id: 801, name: 'Person 1', role: '', image: '' },
@@ -231,8 +231,8 @@ export const teamsData: Team[] = [
       { id: 808, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -245,7 +245,7 @@ export const teamsData: Team[] = [
       id: 26,
       name: "K Vasavi",
       role: "23KD1A0251",
-      image: "/team_images/23KD1A0251.jpg"
+      image: "#"
     },
     members: [
       { id: 901, name: 'Person 1', role: '', image: '' },
@@ -258,8 +258,8 @@ export const teamsData: Team[] = [
       { id: 908, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1581056771107-24247a734e15?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -272,7 +272,7 @@ export const teamsData: Team[] = [
       id: 29,
       name: "Ch Pujitha",
       role: "23KD1A0222",
-      image: "/team_images/23KD1A0222.jpg"
+      image: "#"
     },
     members: [
       { id: 1001, name: 'Person 1', role: '', image: '' },
@@ -285,8 +285,8 @@ export const teamsData: Team[] = [
       { id: 1008, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1573075175660-08fd45ac27a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1742&q=80",
-      "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -299,7 +299,7 @@ export const teamsData: Team[] = [
       id: 32,
       name: "A Rupa Rani",
       role: "24KD5A0202",
-      image: "/team_images/24KD5A0202.jpg"
+      image: "#"
     },
     members: [
       { id: 1101, name: 'Person 1', role: '', image: '' },
@@ -312,8 +312,8 @@ export const teamsData: Team[] = [
       { id: 1108, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1544961371-516024f8e267?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1738&q=80",
-      "https://images.unsplash.com/photo-1516738901171-8eb4fc13bd20?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -326,7 +326,7 @@ export const teamsData: Team[] = [
       id: 35,
       name: "G Tarun Sai",
       role: "23KD1A0237",
-      image: "/team_images/23KD1A0237.jpg"
+      image: "#"
     },
     members: [
       { id: 1201, name: 'Person 1', role: '', image: '' },
@@ -339,8 +339,8 @@ export const teamsData: Team[] = [
       { id: 1208, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80",
-      "https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1076&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -353,7 +353,7 @@ export const teamsData: Team[] = [
       id: 38,
       name: "Ch Sohitha Sai",
       role: "23KD1A0219",
-      image: "/team_images/23KD1A0219.jpg"
+      image: "#"
     },
     members: [
       { id: 1301, name: 'Person 1', role: '', image: '' },
@@ -366,8 +366,8 @@ export const teamsData: Team[] = [
       { id: 1308, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1551091016-1cdefa81989d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
-      "https://images.unsplash.com/photo-1580983218765-f663bec07b37?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1746&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -380,7 +380,7 @@ export const teamsData: Team[] = [
       id: 41,
       name: "K Sandeep Babu",
       role: "23KD1A0257",
-      image: "/team_images/23KD1A0257.jpg"
+      image: "#"
     },
     members: [
       { id: 1401, name: 'Person 1', role: '', image: '' },
@@ -393,8 +393,8 @@ export const teamsData: Team[] = [
       { id: 1408, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1585833450545-04df2d2c6014?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80",
-      "https://images.unsplash.com/photo-1571913196747-5023e8dbd01c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -407,7 +407,7 @@ export const teamsData: Team[] = [
       id: 44,
       name: "Ch Hemanth Kumar",
       role: "23KD1A0220",
-      image: "/team_images/23KD1A0220.jpg"
+      image: "#"
     },
     members: [
       { id: 1501, name: 'Person 1', role: '', image: '' },
@@ -420,8 +420,8 @@ export const teamsData: Team[] = [
       { id: 1508, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1744&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -434,7 +434,7 @@ export const teamsData: Team[] = [
       id: 47,
       name: "G Kavitha",
       role: "23KD1A0239",
-      image: "/team_images/23KD1A0239.jpg"
+      image: "#"
     },
     members: [
       { id: 1601, name: 'Person 1', role: '', image: '' },
@@ -447,8 +447,8 @@ export const teamsData: Team[] = [
       { id: 1608, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1597852074816-d933c7d2b988?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80",
-      "https://images.unsplash.com/photo-1527613426441-4da17471b66d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1752&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -461,7 +461,7 @@ export const teamsData: Team[] = [
       id: 50,
       name: "M Adhi Lakshmi",
       role: "23KD1A0264",
-      image: "/team_images/23KD1A0264.jpg"
+      image: "#"
     },
     members: [
       { id: 1701, name: 'Person 1', role: '', image: '' },
@@ -474,8 +474,8 @@ export const teamsData: Team[] = [
       { id: 1708, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80",
-      "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   },
   {
@@ -488,7 +488,7 @@ export const teamsData: Team[] = [
       id: 53,
       name: "Leader Name",
       role: "Sample Role",
-      image: "/team_images/default.jpg"
+      image: "#"
     },
     members: [
       { id: 1801, name: 'Person 1', role: '', image: '' },
@@ -501,8 +501,8 @@ export const teamsData: Team[] = [
       { id: 1808, name: 'Person 8', role: '', image: '' }
     ],
     projectImages: [
-      "https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1758&q=80",
-      "https://images.unsplash.com/photo-1592210454359-9043f067919b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+      "#",
+      "#"
     ]
   }
 ];
@@ -511,6 +511,6 @@ export const teamsData: Team[] = [
 export const mentorData = {
   name: "Bugatha Ram Vara Prasad",
   title: "Assistant Professor, Dept. Of EEE",
-  image: "/team_images/mentor.jpg",
+  image: "#",
   bio: "Ram Vara Prasad Bugatha is an Assistant Professor in the Department of Electrical and Electronics Engineering (EEE) with over four years of experience in academia. His expertise lies in Power and Industrial Drives, and he holds an M.Tech degree, currently pursuing a Ph.D. Passionate about technological advancements, he has actively participated in numerous Faculty Development Programs (FDPs) and workshops on Industrial Automation, IoT, Embedded Systems, and Power Systems.An accomplished researcher, he has published extensively in reputed journals and conferences, focusing on Smart Electric Vehicles, Renewable Energy Applications, Power Quality Enhancement, and Advanced Motor Control Strategies. He has also presented his work at national and international conferences, contributing to the discourse on sustainable and efficient energy solutions.Beyond research, he has guided several student projects, including IoT-based home automation, smart electric vehicles, and solar-powered charging stations for EVs. A dedicated mentor, he holds multiple NPTEL certifications and actively engages in professional bodies such as ISTE, IAENG, and IFERP, fostering academic excellence and innovation in electrical engineering."
 };
