@@ -198,7 +198,7 @@ const TeamDetail = () => {
   const videoUrl = projectVideos.length > 0 ? projectVideos[0] : `/team_videos/team_${team.id}.mp4`;
   
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="flex flex-col min-h-screen bg-slate-50/30">
       <PageSEO
         title={`Team ${displayTeam.name}`} 
         description={`Learn about Team ${displayTeam.name} and their innovative project: ${displayTeam.description}. See team members and project progress.`}
@@ -208,63 +208,81 @@ const TeamDetail = () => {
       <Navbar />
       
       <main className="flex-grow pt-24 pb-20">
-        <section className="relative px-6 py-20 overflow-hidden bg-gradient-to-r from-blue-50 to-indigo-50">
-          <div className="max-w-7xl mx-auto">
+        {/* Page Hero - Modern and High-Fidelity */}
+        <section className="relative px-6 py-20 md:py-28 overflow-hidden bg-slate-950 text-white mt-16 glow-mesh-combo">
+          <div className="absolute inset-0 bg-[linear-gradient(to_right,#0f172a_1px,transparent_1px),linear-gradient(to_bottom,#0f172a_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
+
+          <div className="max-w-7xl mx-auto relative z-10">
             <Button
               variant="ghost"
-              className="mb-8 flex items-center gap-2 text-muted-foreground hover:text-foreground"
+              className="mb-8 flex items-center gap-2 text-slate-450 hover:text-white hover:bg-white/5 rounded-xl border border-slate-900 transition-all font-semibold"
               onClick={() => navigate('/teams')}
             >
-              <ArrowLeft size={16} />
+              <ArrowLeft size={15} />
               Back to Teams
             </Button>
             
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-              <div className="space-y-6">
-                <div>
-                  <span className="inline-block py-1 px-3 bg-blue-100 text-blue-600 rounded-lg text-sm font-medium mb-2">
-                    Team {team.id}
-                  </span>
-                  <h1 className="text-3xl md:text-5xl font-bold">{displayTeam.name}</h1>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+              {/* Left Column: Heading and Details */}
+              <div className="space-y-6 lg:col-span-7">
+                <div className="space-y-4">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full text-xs md:text-sm font-bold uppercase tracking-widest">
+                    Team Portfolio {team.id}
+                  </div>
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">{displayTeam.name}</h1>
                 </div>
                 
-                <p className="text-xl text-muted-foreground">{displayTeam.description}</p>
+                <p className="text-sm md:text-lg text-slate-300 leading-relaxed font-semibold">{displayTeam.description}</p>
                 
-                <div className="pt-4">
+                {/* Progress bar metrics */}
+                <div className="pt-6 space-y-3 max-w-xl">
+                  <div className="flex items-center justify-between">
+                    <span className="font-bold text-xs text-slate-400 uppercase tracking-widest">Project Maturity</span>
+                    <span className="font-black text-amber-400 text-lg">{team.progress}%</span>
+                  </div>
                   <ProgressBar 
                     progress={team.progress} 
-                    label="Project Completion" 
+                    label="" 
                     size="lg" 
                     color={team.progress > 75 ? 'success' : team.progress > 25 ? 'default' : 'warning'} 
                   />
                 </div>
               </div>
               
-              <div className="relative">
-                <div className="overflow-hidden rounded-lg shadow-lg">
-                  <Avatar className="w-full h-auto object-cover aspect-[4/3]">
-                    <AvatarImage 
-                      src={team.leader.image} 
-                      alt={team.leader.name}
-                      className="w-full h-auto aspect-[4/3] object-cover"
-                      loading="eager"
-                    />
-                    <AvatarFallback className="w-full h-auto aspect-[4/3] text-5xl bg-gradient-to-r from-blue-100 to-indigo-100">
-                      {getInitials(team.leader.name)}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6">
-                    <div className="flex items-center gap-2 mb-1">
-                      <Award className="text-yellow-400" size={18} />
-                      <Badge variant="secondary" className="bg-yellow-400/20 text-yellow-600 border-yellow-400/30">
+              {/* Right Column: Dynamic Leader Profile Shield */}
+              <div className="relative lg:col-span-5 w-full max-w-md mx-auto animate-scale-in">
+                <div className="absolute -inset-1.5 bg-gradient-to-br from-amber-500 to-indigo-600 rounded-3xl blur opacity-20"></div>
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl border border-white/10 bg-slate-900/95 backdrop-blur-md">
+                  <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
+                    <Avatar className="w-full h-full rounded-none">
+                      <AvatarImage 
+                        src={team.leader.image} 
+                        alt={team.leader.name}
+                        className="w-full h-full object-cover"
+                        loading="eager"
+                      />
+                      <AvatarFallback className="w-full h-full text-5xl bg-gradient-to-br from-slate-900 to-indigo-950 text-white flex items-center justify-center font-black">
+                        {getInitials(team.leader.name)}
+                      </AvatarFallback>
+                    </Avatar>
+                    {/* Shadow overlay */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+                  </div>
+                  
+                  {/* Leader details footer */}
+                  <div className="p-6 relative">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Award className="text-amber-500 flex-shrink-0" size={16} />
+                      <Badge variant="secondary" className="bg-amber-500/10 text-amber-400 border border-amber-500/20 font-bold text-[10px] uppercase tracking-widest">
                         Team Leader
                       </Badge>
                     </div>
-                    <h3 className="text-white font-bold text-xl">{team.leader.name}</h3>
-                    <p className="text-white/80">{team.leader.role}</p>
+                    <h3 className="text-white font-black text-2xl tracking-tight">{team.leader.name}</h3>
+                    {team.leader.role && <p className="text-slate-400 text-xs mt-1 font-semibold">{team.leader.role}</p>}
                     {team.leader.rating > 0 && (
-                      <div className="mt-1">
-                        <StarRating rating={team.leader.rating} size="md" interactive={false} />
+                      <div className="mt-4 border-t border-slate-850 pt-3 flex items-center gap-1.5">
+                        <span className="text-[10px] text-slate-500 font-bold uppercase tracking-widest mr-1">Rating:</span>
+                        <StarRating rating={team.leader.rating} size="sm" interactive={false} />
                       </div>
                     )}
                   </div>
@@ -274,160 +292,183 @@ const TeamDetail = () => {
           </div>
         </section>
         
-        <section className="py-16 px-6 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Project Overview</h2>
-            <div className="prose prose-lg max-w-none">
-              <p className="leading-relaxed text-muted-foreground">{displayTeam.longDescription}</p>
-            </div>
-            
-            {/* Project Video Section */}
-            <div className="mt-12">
-              <h3 className="text-xl md:text-2xl font-bold mb-6">Project Presentation</h3>
-              <div className="relative w-full overflow-hidden rounded-lg shadow-lg bg-black aspect-video">
-                <video 
-                  controls
-                  className="w-full h-full object-contain"
-                  poster={displayImages[0]}
-                  preload="metadata"
-                  onError={(e) => {
-                    const el = e.currentTarget;
-                    el.onerror = null; 
-                    el.parentElement.innerHTML = `
-                      <div class="flex flex-col items-center justify-center w-full h-full text-white p-8 text-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mb-4 opacity-60"><path d="M2 16V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="m10 9 5 3-5 3z"/></svg>
-                        <p class="text-lg font-medium opacity-80">Video presentation coming soon</p>
-                        <p class="text-sm opacity-60 mt-2">The team is currently preparing their video presentation</p>
-                      </div>
-                    `;
-                  }}
-                >
-                  <source src={videoUrl} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-            </div>
-            
-            {/* Presentation Section */}
-            <div className="mt-16 pt-8 border-t border-gray-100">
-              <PresentationViewer teamId={team.id} teamName={displayTeam.name} />
-            </div>
-          </div>
-        </section>
-        
-        <section className="py-16 px-6 bg-gray-50">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">
-              <span className="inline-block py-1 px-3 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium mb-2">
-                Our Team
-              </span>
-              <br />
-              Meet the Members
-            </h2>
-            
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl border-2 border-yellow-400">
-                <div className="aspect-square overflow-hidden relative">
-                  <Avatar className="w-full h-full">
-                    <AvatarImage 
-                      src={team.leader.image} 
-                      alt={team.leader.name} 
-                      className="w-full h-full object-cover"
-                      loading="lazy"
-                    />
-                    <AvatarFallback className="w-full h-full text-3xl bg-gradient-to-r from-yellow-100 to-amber-100">
-                      {getInitials(team.leader.name)}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div className="absolute top-2 right-2">
-                    <Badge variant="secondary" className="bg-yellow-400 text-yellow-900">
-                      <Award className="mr-1 h-3 w-3" /> Leader
-                    </Badge>
-                  </div>
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-lg">{team.leader.name}</h3>
-                  <p className="text-sm text-muted-foreground">{team.leader.role}</p>
-                  {team.leader.rating > 0 && (
-                    <div className="mt-2">
-                      <StarRating rating={team.leader.rating} size="sm" interactive={false} />
+        {/* Core content area - Asymmetrical 2-Column Desktop Grid Layout */}
+        <section className="py-20 px-6 md:px-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+              
+              {/* Left Column (2/3 width on desktop) - Project Technicalities */}
+              <div className="lg:col-span-8 space-y-12">
+                
+                {/* 1. Project Overview Card */}
+                <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.02)] space-y-6 animate-fade-in">
+                  <div className="pb-4 border-b border-slate-100 flex items-center justify-between">
+                    <div>
+                      <span className="text-[10px] font-bold text-indigo-600 uppercase tracking-widest">Abstract</span>
+                      <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-0.5">Project Overview</h2>
                     </div>
-                  )}
+                  </div>
+                  <div className="prose prose-slate max-w-none text-slate-600 font-semibold leading-relaxed text-base md:text-lg">
+                    <p>{displayTeam.longDescription}</p>
+                  </div>
+                </div>
+                
+                {/* 2. Video Presentation Section */}
+                <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.02)] space-y-6">
+                  <div className="pb-4 border-b border-slate-100">
+                    <span className="text-[10px] font-bold text-amber-500 uppercase tracking-widest">Presentation Video</span>
+                    <h3 className="text-2xl font-black text-slate-900 tracking-tight mt-0.5">Demo & Walkthrough</h3>
+                  </div>
+                  
+                  {/* Premium mock-video framed screen wrapper */}
+                  <div className="relative w-full overflow-hidden rounded-2xl shadow-xl bg-slate-950 aspect-video border border-slate-200/50">
+                    <video 
+                      controls
+                      className="w-full h-full object-contain"
+                      poster={displayImages[0]}
+                      preload="metadata"
+                      onError={(e) => {
+                        const el = e.currentTarget;
+                        el.onerror = null; 
+                        el.parentElement.innerHTML = `
+                          <div class="flex flex-col items-center justify-center w-full h-full text-white p-8 text-center bg-slate-950 relative">
+                            <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#1e293b,transparent_75%)] opacity-35"></div>
+                            <svg xmlns="http://www.w3.org/2050/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-4 text-amber-500 opacity-80 animate-pulse"><path d="M2 16V8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2z"/><path d="m10 9 5 3-5 3z"/></svg>
+                            <p class="text-lg font-black tracking-tight text-white z-10">Video Presentation Available Soon</p>
+                            <p class="text-xs text-slate-400 max-w-sm mt-2 font-semibold z-10">The team is currently finalizing their digital engineering demonstration video.</p>
+                          </div>
+                        `;
+                      }}
+                    >
+                      <source src={videoUrl} type="video/mp4" />
+                      Your browser does not support the video tag.
+                    </video>
+                  </div>
+                </div>
+                
+                {/* 3. Presentation Slides Section */}
+                <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.02)] animate-fade-in">
+                  <PresentationViewer teamId={team.id} teamName={displayTeam.name} />
+                </div>
+ 
+                {/* 4. Showcase Gallery Section */}
+                {displayImages.length > 0 && (
+                  <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.02)] space-y-6">
+                    <div className="pb-4 border-b border-slate-100 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                      <div>
+                        <span className="text-[10px] font-bold text-emerald-600 uppercase tracking-widest">Showcase</span>
+                        <h2 className="text-2xl font-black text-slate-900 tracking-tight mt-0.5">Development Gallery</h2>
+                      </div>
+                      <div className="text-[10px] text-slate-550 font-bold bg-slate-50 border border-slate-100 rounded-full px-3 py-1 uppercase tracking-widest inline-block self-start sm:self-center">
+                        {displayImages.length} image{displayImages.length !== 1 ? 's' : ''} available
+                      </div>
+                    </div>
+                    
+                    <div className={`grid gap-6 ${
+                      displayImages.length === 1 ? 'grid-cols-1 max-w-xl mx-auto' :
+                      displayImages.length === 2 ? 'grid-cols-1 md:grid-cols-2' :
+                      'grid-cols-1 md:grid-cols-3'
+                    }`}>
+                      {displayImages.map((image, index) => (
+                        <div 
+                          key={index} 
+                          className="overflow-hidden rounded-2xl shadow-sm border border-slate-100 hover:shadow-lg hover:border-slate-200 transition-all duration-300 group cursor-pointer relative"
+                        >
+                          <img 
+                            src={image} 
+                            alt={`Project image ${index + 1} for Team ${team.id}`} 
+                            className="w-full h-auto aspect-video object-cover group-hover:scale-[1.03] transition-all duration-500"
+                            loading="lazy"
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                )}
+              </div>
+              
+              {/* Right Column (1/3 width on desktop) - Team Members Panel & Stats */}
+              <div className="lg:col-span-4 space-y-8">
+                
+                {/* Academic Credentials/Meta Card */}
+                <div className="bg-slate-900 text-white rounded-3xl p-6 border border-slate-800 shadow-xl space-y-4 animate-fade-in">
+                  <h4 className="text-[10px] font-bold text-amber-500 uppercase tracking-widest">Academic credentials</h4>
+                  <div className="space-y-3 font-semibold">
+                    <div className="flex justify-between items-center text-sm py-1 border-b border-slate-800">
+                      <span className="text-slate-450">Cohort Section</span>
+                      <span className="font-black">EEE Section {team.id > 9 ? 'B' : 'A'}</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm py-1 border-b border-slate-800">
+                      <span className="text-slate-450">Institution</span>
+                      <span className="font-black text-right">Lendi Institute</span>
+                    </div>
+                    <div className="flex justify-between items-center text-sm py-1">
+                      <span className="text-slate-450">Program</span>
+                      <span className="font-black text-amber-400">Design Thinking</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Team Members List */}
+                <div className="bg-white rounded-3xl p-6 border border-slate-100/80 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.03)] space-y-6">
+                  <div className="pb-4 border-b border-slate-100 flex items-center justify-between">
+                    <div>
+                      <span className="text-[10px] font-bold text-purple-600 uppercase tracking-widest">Members</span>
+                      <h3 className="text-xl font-extrabold text-slate-900 tracking-tight mt-0.5">Meet the Cohort</h3>
+                    </div>
+                    <span className="text-xs font-bold bg-slate-50 border border-slate-100 rounded-full px-3 py-1 text-slate-500">
+                      {team.members.length + 1} total
+                    </span>
+                  </div>
+                  
+                  <div className="space-y-4">
+                    {/* Leader Profile item in List */}
+                    <div className="flex items-center gap-4 p-3 bg-amber-500/5 border border-amber-500/10 rounded-2xl">
+                      <Avatar className="w-11 h-11 border-2 border-amber-300 shadow-sm">
+                        <AvatarImage src={team.leader.image} alt={team.leader.name} className="object-cover" />
+                        <AvatarFallback className="text-sm bg-gradient-to-br from-amber-400 to-orange-500 text-white font-extrabold flex items-center justify-center">
+                          {getInitials(team.leader.name)}
+                        </AvatarFallback>
+                      </Avatar>
+                      <div className="flex-grow min-w-0">
+                        <h4 className="text-sm font-extrabold text-slate-900 truncate leading-tight">{team.leader.name}</h4>
+                        <div className="flex items-center gap-1.5 mt-0.5">
+                          <Badge className="bg-amber-500/15 text-amber-600 border-0 text-[8px] px-1 py-0 uppercase font-black tracking-widest">Leader</Badge>
+                          {team.leader.rating > 0 && <StarRating rating={team.leader.rating} size="xs" interactive={false} />}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Member Profile items */}
+                    {team.members.map((member) => (
+                      <div 
+                        key={member.id} 
+                        className="flex items-center gap-4 p-3 bg-slate-50/50 border border-slate-100/50 hover:border-slate-200 rounded-2xl transition-all duration-300"
+                      >
+                        <Avatar className="w-11 h-11 border border-slate-200">
+                          <AvatarImage src={member.image} alt={member.name} className="object-cover" />
+                          <AvatarFallback className="text-sm bg-gradient-to-br from-slate-100 to-slate-200 text-slate-600 font-extrabold flex items-center justify-center">
+                            {getInitials(member.name)}
+                          </AvatarFallback>
+                        </Avatar>
+                        <div className="flex-grow min-w-0">
+                          <h4 className="text-sm font-extrabold text-slate-900 truncate leading-tight">{member.name}</h4>
+                          <p className="text-[10px] text-slate-400 font-semibold mt-0.5 truncate">{member.role || "Research Cohort"}</p>
+                          {member.rating > 0 && (
+                            <div className="mt-1">
+                              <StarRating rating={member.rating} size="xs" interactive={false} />
+                            </div>
+                          )}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
               
-              {team.members.map((member) => (
-                <div 
-                  key={member.id} 
-                  className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl"
-                >
-                  <div className="aspect-square overflow-hidden">
-                    <Avatar className="w-full h-full">
-                      <AvatarImage 
-                        src={member.image} 
-                        alt={member.name} 
-                        className="w-full h-full object-cover"
-                        loading="lazy"
-                      />
-                      <AvatarFallback className="w-full h-full text-3xl bg-gradient-to-r from-blue-100 to-indigo-100">
-                        {getInitials(member.name)}
-                      </AvatarFallback>
-                    </Avatar>
-                  </div>
-                  <div className="p-4">
-                    <h3 className="font-medium text-lg">{member.name}</h3>
-                    <p className="text-sm text-muted-foreground">{member.role}</p>
-                    {member.rating > 0 && (
-                      <div className="mt-2">
-                        <StarRating rating={member.rating} size="sm" interactive={false} />
-                      </div>
-                    )}
-                  </div>
-                </div>
-              ))}
             </div>
           </div>
         </section>
-        
-        {displayImages.length > 0 && (
-          <section className="py-16 px-6 bg-white">
-            <div className="max-w-6xl mx-auto">
-              <h2 className="text-2xl md:text-3xl font-bold mb-12 text-center">
-                <span className="inline-block py-1 px-3 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium mb-2">
-                  Gallery
-                </span>
-                <br />
-                Project Showcase
-              </h2>
-              
-              <div className={`grid gap-8 ${
-                displayImages.length === 1 ? 'grid-cols-1 max-w-2xl mx-auto' :
-                displayImages.length === 2 ? 'grid-cols-1 md:grid-cols-2' :
-                'grid-cols-1 md:grid-cols-3'
-              }`}>
-                {displayImages.map((image, index) => (
-                  <div 
-                    key={index} 
-                    className="overflow-hidden rounded-lg shadow-lg hover:shadow-xl"
-                  >
-                    <img 
-                      src={image} 
-                      alt={`Project image ${index + 1} for Team ${team.id}`} 
-                      className="w-full h-auto aspect-video object-cover"
-                      loading="lazy"
-                    />
-                  </div>
-                ))}
-              </div>
-              
-              <div className="mt-8 text-center">
-                <p className="text-sm text-muted-foreground">
-                  Project images from Team {team.id}'s development process ({displayImages.length} image{displayImages.length !== 1 ? 's' : ''})
-                </p>
-              </div>
-            </div>
-          </section>
-        )}
       </main>
       
       <Footer />

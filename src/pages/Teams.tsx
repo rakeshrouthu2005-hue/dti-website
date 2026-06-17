@@ -69,33 +69,39 @@ const Teams = () => {
       
       <Navbar />
       
-      <main className="flex-grow pt-24 pb-20 px-6">
+      <main className="flex-grow pt-32 pb-20 px-6 md:px-10">
         <div className="max-w-7xl mx-auto">
+          {/* Page Header */}
           <div className="text-center mb-16 space-y-4">
-            <span className="inline-block py-1 px-3 bg-blue-50 text-blue-600 rounded-lg text-sm font-medium">
-              Projects
-            </span>
-            <h1 className="text-4xl md:text-5xl font-bold">Design Thinking & Innovation Teams</h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore the diverse projects which our teams are developing, from concept to implementation.
+            <div className="inline-block">
+              <span className="inline-block py-1.5 px-3 bg-amber-50 text-amber-700 border border-amber-100 rounded-full text-xs font-bold uppercase tracking-widest">
+                Student Projects Showcase
+              </span>
+            </div>
+            <h1 className="text-4xl md:text-5xl font-black text-slate-900 tracking-tight">
+              Design Thinking & Innovation Teams
+            </h1>
+            <p className="text-base md:text-lg text-slate-500 max-w-3xl mx-auto font-medium leading-relaxed">
+              Explore the diverse and innovative project portfolios that our talented teams are developing, tracking their progress from initial human-centered empathy stages to advanced functional prototyping.
             </p>
+            <div className="w-16 h-1 bg-gradient-to-r from-amber-500 to-amber-300 rounded-full mx-auto mt-4"></div>
           </div>
           
-          {/* Filters */}
-          <div className="mb-10 max-w-3xl mx-auto">
+          {/* Filters Section */}
+          <div className="mb-16 max-w-4xl mx-auto p-4 bg-white rounded-2xl shadow-[0_10px_35px_-10px_rgba(0,0,0,0.04)] border border-slate-100">
             <div className="flex flex-col md:flex-row gap-4">
               <div className="flex-grow">
                 <input
                   type="text"
                   placeholder="Search teams, members, or roll numbers..."
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:border-transparent text-slate-900 placeholder:text-slate-400 font-semibold text-sm transition-all shadow-sm"
                   value={searchQuery}
                   onChange={handleSearchChange}
                 />
               </div>
-              <div className="min-w-[200px]">
+              <div className="min-w-[260px]">
                 <select
-                  className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500 appearance-none bg-white"
+                  className="w-full px-5 py-3.5 rounded-xl border border-slate-200 focus:outline-none focus:ring-2 focus:ring-slate-950 focus:border-transparent bg-white text-slate-800 font-semibold text-sm transition-all cursor-pointer shadow-sm"
                   value={selectedProgress}
                   onChange={handleProgressChange}
                 >
@@ -109,13 +115,24 @@ const Teams = () => {
             </div>
           </div>
           
-          {/* Teams Grid split into two sections: EEE A and EEE B */}
+          {/* Teams Grid */}
           {filteredTeams.length > 0 ? (
-            <div className="space-y-12">
+            <div className="space-y-20">
               {/* Section A */}
               <section>
-                <h2 className="text-2xl font-semibold mb-4">EEE A</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4 pb-5 border-b border-slate-200/60">
+                  <div className="flex items-center gap-4">
+                    <span className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-amber-500/10 text-amber-600 border border-amber-500/20 font-black text-lg">A</span>
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+                        Electrical & Electronics Engineering — Section A
+                      </h2>
+                      <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Section A Projects Showcase</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {Array.from({ length: 9 }).map((_, idx) => {
                     const team = filteredTeams[idx];
                     return team ? (
@@ -135,8 +152,19 @@ const Teams = () => {
 
               {/* Section B */}
               <section>
-                <h2 className="text-2xl font-semibold mb-4">EEE B</h2>
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="mb-10 flex flex-col md:flex-row md:items-center justify-between gap-4 pb-5 border-b border-slate-200/60">
+                  <div className="flex items-center gap-4">
+                    <span className="inline-flex items-center justify-center w-12 h-12 rounded-2xl bg-indigo-500/10 text-indigo-600 border border-indigo-500/20 font-black text-lg">B</span>
+                    <div>
+                      <h2 className="text-2xl md:text-3xl font-black text-slate-900 tracking-tight">
+                        Electrical & Electronics Engineering — Section B
+                      </h2>
+                      <p className="text-xs text-slate-400 font-bold uppercase tracking-widest mt-1">Section B Projects Showcase</p>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                   {Array.from({ length: 9 }).map((_, idx) => {
                     const team = filteredTeams[idx + 9];
                     return team ? (
@@ -155,16 +183,18 @@ const Teams = () => {
               </section>
             </div>
           ) : (
-            <div className="text-center py-20">
-              <p className="text-xl text-muted-foreground">
-                No teams match your search criteria.
+            <div className="text-center py-28 bg-white rounded-2xl shadow-sm border border-slate-100 max-w-xl mx-auto p-12">
+              <Users className="w-16 h-16 text-slate-300 mx-auto mb-4" />
+              <p className="text-xl text-slate-800 font-bold tracking-tight">
+                No teams match your search criteria
               </p>
+              <p className="text-slate-400 mt-2 font-medium text-sm">Try adjusting your progress filter or changing your search terms.</p>
             </div>
           )}
           
           {/* Team Count */}
-          <div className="mt-8 text-center text-sm text-muted-foreground">
-            Showing {filteredTeams.length} of {teams.length} teams
+          <div className="mt-16 text-center text-sm text-slate-400 font-semibold border-t border-slate-200/50 pt-8">
+            Displaying <span className="text-slate-900 font-bold">{filteredTeams.length}</span> of <span className="text-slate-900 font-bold">{teams.length}</span> active student teams
           </div>
         </div>
       </main>
