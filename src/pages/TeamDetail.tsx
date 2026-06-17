@@ -353,7 +353,7 @@ const TeamDetail = () => {
                 
                 {/* 3. Presentation Slides Section */}
                 <div className="bg-white rounded-3xl p-8 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.02)] animate-fade-in">
-                  <PresentationViewer teamId={team.id} teamName={displayTeam.name} />
+                  <PresentationViewer teamId={team.id} teamName={displayTeam.name} section={section} />
                 </div>
  
                 {/* 4. Showcase Gallery Section */}

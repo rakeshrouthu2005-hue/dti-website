@@ -7,9 +7,10 @@ import { fetchTeamData } from '@/services/supabaseTeamService';
 interface PresentationViewerProps {
   teamId: number;
   teamName: string;
+  section?: string;
 }
 
-const PresentationViewer: React.FC<PresentationViewerProps> = ({ teamId, teamName }) => {
+const PresentationViewer: React.FC<PresentationViewerProps> = ({ teamId, teamName, section = 'eee-a' }) => {
   const [isLoading, setIsLoading] = useState(true);
   const [showFallback, setShowFallback] = useState(false);
   const [presentationUrl, setPresentationUrl] = useState<string>('');
@@ -28,20 +29,20 @@ const PresentationViewer: React.FC<PresentationViewerProps> = ({ teamId, teamNam
           setIsSupabaseUrl(true);
         } else {
           console.log('No uploaded presentation found, using static file');
-          // Fallback to static presentation file
-          setPresentationUrl(`/team_presentations/team_${teamId}_presentation.pptx`);
+          // Fallback to static presentation file with section support
+          setPresentationUrl(`/team_presentations/${section}_team_${teamId}_presentation.pptx`);
           setIsSupabaseUrl(false);
         }
       } catch (error) {
         console.error('Error loading presentation:', error);
         // Fallback to static presentation file
-        setPresentationUrl(`/team_presentations/team_${teamId}_presentation.pptx`);
+        setPresentationUrl(`/team_presentations/${section}_team_${teamId}_presentation.pptx`);
         setIsSupabaseUrl(false);
       }
     };
 
     loadPresentation();
-  }, [teamId]);
+  }, [teamId, section]);
   
   // Use Microsoft Office Online viewer for better PPTX support
   // Handle URL construction differently for Supabase vs static files
