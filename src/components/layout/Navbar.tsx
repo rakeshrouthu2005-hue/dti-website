@@ -91,13 +91,22 @@ const Navbar: React.FC = () => {
             <span>Smart Assessment</span>
           </NavLink>
           <NavLink 
-            to="/teams" 
+            to="/teams/eee-a" 
             className={({ isActive }) => cn(
               'nav-link',
               isActive && 'active'
             )}
           >
-            Teams
+            EEE-A Teams
+          </NavLink>
+          <NavLink 
+            to="/teams/eee-b" 
+            className={({ isActive }) => cn(
+              'nav-link',
+              isActive && 'active'
+            )}
+          >
+            EEE-B Teams
           </NavLink>
           <NavLink 
             to="/about" 
@@ -146,7 +155,7 @@ const Navbar: React.FC = () => {
               <span>Smart Assessment</span>
             </NavLink>
             <NavLink 
-              to="/teams" 
+              to="/teams/eee-a" 
               className={({ isActive }) => cn(
                 'px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 block',
                 isActive 
@@ -154,7 +163,18 @@ const Navbar: React.FC = () => {
                   : 'text-slate-600 hover:text-slate-950 hover:bg-slate-50/50'
               )}
             >
-              Teams
+              EEE-A Teams
+            </NavLink>
+            <NavLink 
+              to="/teams/eee-b" 
+              className={({ isActive }) => cn(
+                'px-4 py-3 rounded-xl text-sm font-semibold transition-all duration-200 block',
+                isActive 
+                  ? 'text-slate-950 bg-slate-50 border-l-4 border-indigo-500 font-bold' 
+                  : 'text-slate-600 hover:text-slate-950 hover:bg-slate-50/50'
+              )}
+            >
+              EEE-B Teams
             </NavLink>
             <NavLink 
               to="/about" 

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { cn } from '@/lib/utils';
 import ProgressBar from './ProgressBar';
 import { Button } from '@/components/ui/button';
-import { getTeamById, subscribeToSupabaseUpdates } from '@/services/teamService';
+import { getTeamBySectionAndId, subscribeToSupabaseUpdates } from '@/services/teamService';
 import { Award, Users } from 'lucide-react';
 import StarRating from './StarRating';
 import { supabase } from '@/integrations/supabase/client';
@@ -16,10 +16,11 @@ interface TeamCardProps {
   className?: string;
   placeholder?: boolean;
   displayId?: number;
+  section?: string;
 }
 
 // Memoize the TeamCard component to prevent unnecessary re-renders
-const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialProgress, className, placeholder, displayId }) => {
+const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialProgress, className, placeholder, displayId, section = 'eee-a' }) => {
   const navigate = useNavigate();
   const [progress, setProgress] = useState(initialProgress);
   const [team, setTeam] = useState(null);
@@ -31,7 +32,7 @@ const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialPro
     
     const loadTeamData = async () => {
       try {
-        const teamData = await getTeamById(id);
+        const teamData = await getTeamBySectionAndId(section, id);
         if (teamData && isMounted) {
           // Fetch ratings from database
           const { data: dbTeam } = await supabase
@@ -91,7 +92,7 @@ const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialPro
     const updateTeam = async () => {
       if (!isMounted) return;
       try {
-        const updatedTeam = await getTeamById(id);
+        const updatedTeam = await getTeamBySectionAndId(section, id);
         if (updatedTeam && isMounted) {
           // Fetch updated ratings from database
           const { data: dbTeam } = await supabase
@@ -178,8 +179,8 @@ const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialPro
     // Save current scroll position before navigation
     const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
     sessionStorage.setItem('scroll-teams-page', scrollPosition.toString());
-    navigate(`/team/${id}`);
-  }, [navigate, id]);
+    navigate(`/teams/${section}/${id}`);
+  }, [navigate, id, section]);
 
   // Render placeholder card when slot is empty
   if (placeholder) {
@@ -260,7 +261,7 @@ const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialPro
                 <span className="text-[10px] font-bold text-slate-450 uppercase tracking-widest">Team Cohort</span>
               </div>
               <ul className="grid grid-cols-2 gap-2">
-                {Array.from({ length: 8 }).map((_, i) => {
+                {Array.from({ length: 6 }).map((_, i) => {
                   const member = team.members && team.members[i];
                   return (
                     <li 
@@ -311,7 +312,7 @@ const TeamCard: React.FC<TeamCardProps> = memo(({ id, name, progress: initialPro
             e.stopPropagation();
             const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
             sessionStorage.setItem('scroll-teams-page', scrollPosition.toString());
-            navigate(`/team/${id}`);
+            navigate(`/teams/${section}/${id}`);
           }}
         >
           View Project Portfolio →

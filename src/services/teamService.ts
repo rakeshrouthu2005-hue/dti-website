@@ -107,14 +107,14 @@ export const updateMemberRating = async (teamId: number, memberId: string, ratin
   }
 };
 
-// Get a single team by ID from cache or fetch
-export const getTeamById = async (id: number | string): Promise<Team | undefined> => {
+// Get a single team by section and ID from cache or fetch
+export const getTeamBySectionAndId = async (section: string, id: number | string): Promise<Team | undefined> => {
   try {
     const teams = await getTeams();
-    return teams.find(team => team.id.toString() === id.toString());
+    return teams.find(team => team.section === section && team.id.toString() === id.toString());
   } catch (error) {
-    console.error('Error getting team by ID:', error);
-    return initialTeamsData.find(team => team.id.toString() === id.toString());
+    console.error('Error getting team by section and ID:', error);
+    return initialTeamsData.find(team => team.section === section && team.id.toString() === id.toString());
   }
 };
 

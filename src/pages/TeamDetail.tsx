@@ -9,14 +9,14 @@ import { ArrowLeft, Award } from 'lucide-react';
 import PageSEO from '@/components/SEO/PageSEO';
 import { Avatar, AvatarImage, AvatarFallback } from '@/components/ui/avatar';
 import { Badge } from '@/components/ui/badge';
-import { getTeamById } from '@/services/teamService';
+import { getTeamBySectionAndId } from '@/services/teamService';
 import { fetchTeamData } from '@/services/supabaseTeamService';
 import StarRating from '@/components/ui/StarRating';
 import PresentationViewer from '@/components/presentations/PresentationViewer';
 import { supabase } from '@/integrations/supabase/client';
 
 const TeamDetail = () => {
-  const { id } = useParams();
+  const { section, id } = useParams();
   const navigate = useNavigate();
   const [team, setTeam] = useState(null);
   const [supabaseTeamData, setSupabaseTeamData] = useState(null);
@@ -24,10 +24,15 @@ const TeamDetail = () => {
   const [availableImages, setAvailableImages] = useState([]);
   
   const loadTeamData = async () => {
-    if (id) {
+    if (section && id) {
       try {
         // Load legacy team data for display compatibility
-        const teamData = await getTeamById(id);
+        const teamData = await getTeamBySectionAndId(section, id);
+        
+        if (!teamData) {
+          navigate(`/teams/${section}`);
+          return;
+        }
         
         // Fetch ratings from database
         const { data: dbTeam } = await supabase
@@ -82,7 +87,7 @@ const TeamDetail = () => {
         await checkAvailableImages(id);
       } catch (error) {
         console.error('Error loading team data:', error);
-        navigate('/teams');
+        navigate(`/teams/${section}`);
       } finally {
         setIsLoading(false);
       }
@@ -117,7 +122,7 @@ const TeamDetail = () => {
   
   useEffect(() => {
     loadTeamData();
-  }, [id, navigate]);
+  }, [section, id, navigate]);
 
   // Listen for dashboard updates
   useEffect(() => {
@@ -162,7 +167,7 @@ const TeamDetail = () => {
       <div className="min-h-screen flex items-center justify-center bg-background">
         <div className="text-center">
           <h1 className="text-2xl font-bold mb-4">Team not found</h1>
-          <Button onClick={() => navigate('/teams')}>Back to Teams</Button>
+          <Button onClick={() => navigate(`/teams/${section || 'eee-a'}`)}>Back to Teams</Button>
         </div>
       </div>
     );
@@ -216,7 +221,7 @@ const TeamDetail = () => {
             <Button
               variant="ghost"
               className="mb-8 flex items-center gap-2 text-slate-450 hover:text-white hover:bg-white/5 rounded-xl border border-slate-900 transition-all font-semibold"
-              onClick={() => navigate('/teams')}
+              onClick={() => navigate(`/teams/${section}`)}
             >
               <ArrowLeft size={15} />
               Back to Teams

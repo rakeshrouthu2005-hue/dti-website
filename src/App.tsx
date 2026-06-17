@@ -4,7 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 
 // Preload critical components immediately
@@ -50,8 +50,9 @@ function App() {
               <Routes>
                 <Route path="/" element={<Index />} />
                 <Route path="/smart-assessment" element={<SmartAssessment />} />
-                <Route path="/teams" element={<Teams />} />
-                <Route path="/team/:id" element={<TeamDetail />} />
+                <Route path="/teams" element={<Navigate to="/teams/eee-a" replace />} />
+                <Route path="/teams/:section" element={<Teams />} />
+                <Route path="/teams/:section/:id" element={<TeamDetail />} />
                 <Route path="/presentations" element={<Presentations />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<NotFound />} />

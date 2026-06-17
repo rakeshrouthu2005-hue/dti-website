@@ -8,6 +8,7 @@ export interface TeamMember {
 
 export interface Team {
   id: number;
+  section: 'eee-a' | 'eee-b';
   name: string;
   description: string;
   longDescription: string;
@@ -32,19 +33,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 101, name: 'Person 1', role: '', image: '' },
-      { id: 102, name: 'Person 2', role: '', image: '' },
-      { id: 103, name: 'Person 3', role: '', image: '' },
-      { id: 104, name: 'Person 4', role: '', image: '' },
-      { id: 105, name: 'Person 5', role: '', image: '' },
-      { id: 106, name: 'Person 6', role: '', image: '' },
-      { id: 107, name: 'Person 7', role: '', image: '' },
-      { id: 108, name: 'Person 8', role: '', image: '' }
+      {
+        id: 101,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 102,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 103,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 104,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 105,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 106,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 2,
@@ -59,19 +89,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 201, name: 'Person 1', role: '', image: '' },
-      { id: 202, name: 'Person 2', role: '', image: '' },
-      { id: 203, name: 'Person 3', role: '', image: '' },
-      { id: 204, name: 'Person 4', role: '', image: '' },
-      { id: 205, name: 'Person 5', role: '', image: '' },
-      { id: 206, name: 'Person 6', role: '', image: '' },
-      { id: 207, name: 'Person 7', role: '', image: '' },
-      { id: 208, name: 'Person 8', role: '', image: '' }
+      {
+        id: 201,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 202,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 203,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 204,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 205,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 206,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 3,
@@ -86,19 +145,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 301, name: 'Person 1', role: '', image: '' },
-      { id: 302, name: 'Person 2', role: '', image: '' },
-      { id: 303, name: 'Person 3', role: '', image: '' },
-      { id: 304, name: 'Person 4', role: '', image: '' },
-      { id: 305, name: 'Person 5', role: '', image: '' },
-      { id: 306, name: 'Person 6', role: '', image: '' },
-      { id: 307, name: 'Person 7', role: '', image: '' },
-      { id: 308, name: 'Person 8', role: '', image: '' }
+      {
+        id: 301,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 302,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 303,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 304,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 305,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 306,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 4,
@@ -113,19 +201,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 401, name: 'Person 1', role: '', image: '' },
-      { id: 402, name: 'Person 2', role: '', image: '' },
-      { id: 403, name: 'Person 3', role: '', image: '' },
-      { id: 404, name: 'Person 4', role: '', image: '' },
-      { id: 405, name: 'Person 5', role: '', image: '' },
-      { id: 406, name: 'Person 6', role: '', image: '' },
-      { id: 407, name: 'Person 7', role: '', image: '' },
-      { id: 408, name: 'Person 8', role: '', image: '' }
+      {
+        id: 401,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 402,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 403,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 404,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 405,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 406,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 5,
@@ -140,19 +257,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 501, name: 'Person 1', role: '', image: '' },
-      { id: 502, name: 'Person 2', role: '', image: '' },
-      { id: 503, name: 'Person 3', role: '', image: '' },
-      { id: 504, name: 'Person 4', role: '', image: '' },
-      { id: 505, name: 'Person 5', role: '', image: '' },
-      { id: 506, name: 'Person 6', role: '', image: '' },
-      { id: 507, name: 'Person 7', role: '', image: '' },
-      { id: 508, name: 'Person 8', role: '', image: '' }
+      {
+        id: 501,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 502,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 503,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 504,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 505,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 506,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 6,
@@ -167,19 +313,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 601, name: 'Person 1', role: '', image: '' },
-      { id: 602, name: 'Person 2', role: '', image: '' },
-      { id: 603, name: 'Person 3', role: '', image: '' },
-      { id: 604, name: 'Person 4', role: '', image: '' },
-      { id: 605, name: 'Person 5', role: '', image: '' },
-      { id: 606, name: 'Person 6', role: '', image: '' },
-      { id: 607, name: 'Person 7', role: '', image: '' },
-      { id: 608, name: 'Person 8', role: '', image: '' }
+      {
+        id: 601,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 602,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 603,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 604,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 605,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 606,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 7,
@@ -194,19 +369,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 701, name: 'Person 1', role: '', image: '' },
-      { id: 702, name: 'Person 2', role: '', image: '' },
-      { id: 703, name: 'Person 3', role: '', image: '' },
-      { id: 704, name: 'Person 4', role: '', image: '' },
-      { id: 705, name: 'Person 5', role: '', image: '' },
-      { id: 706, name: 'Person 6', role: '', image: '' },
-      { id: 707, name: 'Person 7', role: '', image: '' },
-      { id: 708, name: 'Person 8', role: '', image: '' }
+      {
+        id: 701,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 702,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 703,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 704,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 705,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 706,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 8,
@@ -221,19 +425,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 801, name: 'Person 1', role: '', image: '' },
-      { id: 802, name: 'Person 2', role: '', image: '' },
-      { id: 803, name: 'Person 3', role: '', image: '' },
-      { id: 804, name: 'Person 4', role: '', image: '' },
-      { id: 805, name: 'Person 5', role: '', image: '' },
-      { id: 806, name: 'Person 6', role: '', image: '' },
-      { id: 807, name: 'Person 7', role: '', image: '' },
-      { id: 808, name: 'Person 8', role: '', image: '' }
+      {
+        id: 801,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 802,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 803,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 804,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 805,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 806,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 9,
@@ -248,19 +481,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 901, name: 'Person 1', role: '', image: '' },
-      { id: 902, name: 'Person 2', role: '', image: '' },
-      { id: 903, name: 'Person 3', role: '', image: '' },
-      { id: 904, name: 'Person 4', role: '', image: '' },
-      { id: 905, name: 'Person 5', role: '', image: '' },
-      { id: 906, name: 'Person 6', role: '', image: '' },
-      { id: 907, name: 'Person 7', role: '', image: '' },
-      { id: 908, name: 'Person 8', role: '', image: '' }
+      {
+        id: 901,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 902,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 903,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 904,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 905,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 906,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 10,
@@ -275,19 +537,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 1001, name: 'Person 1', role: '', image: '' },
-      { id: 1002, name: 'Person 2', role: '', image: '' },
-      { id: 1003, name: 'Person 3', role: '', image: '' },
-      { id: 1004, name: 'Person 4', role: '', image: '' },
-      { id: 1005, name: 'Person 5', role: '', image: '' },
-      { id: 1006, name: 'Person 6', role: '', image: '' },
-      { id: 1007, name: 'Person 7', role: '', image: '' },
-      { id: 1008, name: 'Person 8', role: '', image: '' }
+      {
+        id: 1001,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1002,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1003,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1004,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1005,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1006,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 11,
@@ -302,19 +593,48 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 1101, name: 'Person 1', role: '', image: '' },
-      { id: 1102, name: 'Person 2', role: '', image: '' },
-      { id: 1103, name: 'Person 3', role: '', image: '' },
-      { id: 1104, name: 'Person 4', role: '', image: '' },
-      { id: 1105, name: 'Person 5', role: '', image: '' },
-      { id: 1106, name: 'Person 6', role: '', image: '' },
-      { id: 1107, name: 'Person 7', role: '', image: '' },
-      { id: 1108, name: 'Person 8', role: '', image: '' }
+      {
+        id: 1101,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1102,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1103,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1104,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1105,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1106,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
     id: 12,
@@ -329,22 +649,51 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 1201, name: 'Person 1', role: '', image: '' },
-      { id: 1202, name: 'Person 2', role: '', image: '' },
-      { id: 1203, name: 'Person 3', role: '', image: '' },
-      { id: 1204, name: 'Person 4', role: '', image: '' },
-      { id: 1205, name: 'Person 5', role: '', image: '' },
-      { id: 1206, name: 'Person 6', role: '', image: '' },
-      { id: 1207, name: 'Person 7', role: '', image: '' },
-      { id: 1208, name: 'Person 8', role: '', image: '' }
+      {
+        id: 1201,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1202,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1203,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1204,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1205,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1206,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-a"
   },
   {
-    id: 13,
+    id: 1,
     name: "team4",
     description: "Wet and Dry Waste Segregation",
     longDescription: "Our project focuses on efficient segregation of wet and dry waste to promote sustainable waste management. By implementing smart sorting mechanisms, we aim to reduce environmental pollution and improve recycling efficiency. This system encourages responsible disposal practices, helping communities maintain cleaner surroundings while supporting eco-friendly habits and reducing landfill burden through automated or manual separation techniques.",
@@ -356,41 +705,99 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 1301, name: 'Person 1', role: '', image: '' },
-      { id: 1302, name: 'Person 2', role: '', image: '' },
-      { id: 1303, name: 'Person 3', role: '', image: '' },
-      { id: 1304, name: 'Person 4', role: '', image: '' },
-      { id: 1305, name: 'Person 5', role: '', image: '' },
-      { id: 1306, name: 'Person 6', role: '', image: '' },
-      { id: 1307, name: 'Person 7', role: '', image: '' },
-      { id: 1308, name: 'Person 8', role: '', image: '' }
+      {
+        id: 1301,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1302,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1303,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1304,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1305,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1306,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-b"
   },
   {
-    id: 14,
-    name: "team5",
-    description: "Solar Power Irrigation System",
-    longDescription: "UrbanFarm is developing compact, efficient vertical farming systems specifically designed for urban environments. Our modular hydroponic units can be installed in various spaces from residential buildings to unused urban lots, enabling local food production with minimal water and energy usage. The system incorporates automated climate control, nutrient delivery, and lighting to optimize plant growth while requiring minimal maintenance. This project addresses challenges in urban food security, reduces the carbon footprint of food transportation, and creates green spaces in densely populated areas.",
-    progress: 75,
+    id: 2,
+    section: "eee-b",
+    name: "Fault detection in transmission lines with IOT",
+    description: "Fault Detection in Transmission Lines Using IoT",
+    longDescription: "Fault Detection in Transmission Lines Using IoT is a smart monitoring system designed to detect faults in power transmission lines quickly and efficiently. The system uses voltage and current sensors connected to an ESP32/Arduino microcontroller to continuously monitor line conditions. The collected data is transmitted through IoT technology to a cloud platform, enabling real-time monitoring and instant fault alerts. This solution helps reduce power outages, maintenance time, and operational costs while improving the reliability and safety of the electrical power transmission system.",
+    progress: 50,
     leader: {
-      id: 41,
-      name: "Leader 5",
-      role: "",
+      id: 200,
+      name: "D.Krishna kumar",
+      role: "24kd1a0232",
       image: "#"
     },
     members: [
-      { id: 1401, name: 'Person 1', role: '', image: '' },
-      { id: 1402, name: 'Person 2', role: '', image: '' },
-      { id: 1403, name: 'Person 3', role: '', image: '' },
-      { id: 1404, name: 'Person 4', role: '', image: '' },
-      { id: 1405, name: 'Person 5', role: '', image: '' },
-      { id: 1406, name: 'Person 6', role: '', image: '' },
-      { id: 1407, name: 'Person 7', role: '', image: '' },
-      { id: 1408, name: 'Person 8', role: '', image: '' }
+      {
+        id: 201,
+        name: "B.praveen",
+        role: "24kd1a0220",
+        image: ""
+      },
+      {
+        id: 202,
+        name: "B.dileep",
+        role: "24kd1a0223",
+        image: ""
+      },
+      {
+        id: 203,
+        name: "CH.Rohith",
+        role: "24kd1a0229",
+        image: ""
+      },
+      {
+        id: 204,
+        name: "D Lokeaswari",
+        role: "24kd1a0231",
+        image: ""
+      },
+      {
+        id: 205,
+        name: "D.sai kumar",
+        role: "24kd1a0233",
+        image: ""
+      },
+      {
+        id: 206,
+        name: "G lavanya",
+        role: "24kd1a0238",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
@@ -398,7 +805,7 @@ export const teamsData: Team[] = [
     ]
   },
   {
-    id: 15,
+    id: 3,
     name: "team6",
     description: "Smart Leave Management System",
     longDescription: "A Smart Leave Management System for colleges is an automated platform that simplifies leave applications, approvals, and tracking for students, faculty, and staff. It eliminates manual paperwork, reduces errors, and ensures adherence to institutional policies. Students can apply for leave online, faculty can approve/reject requests, and administration can maintain records efficiently. Features include real-time leave balance tracking, automated notifications, customizable policies, and seamless integration with attendance management systems.",
@@ -410,22 +817,51 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 1501, name: 'Person 1', role: '', image: '' },
-      { id: 1502, name: 'Person 2', role: '', image: '' },
-      { id: 1503, name: 'Person 3', role: '', image: '' },
-      { id: 1504, name: 'Person 4', role: '', image: '' },
-      { id: 1505, name: 'Person 5', role: '', image: '' },
-      { id: 1506, name: 'Person 6', role: '', image: '' },
-      { id: 1507, name: 'Person 7', role: '', image: '' },
-      { id: 1508, name: 'Person 8', role: '', image: '' }
+      {
+        id: 1501,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1502,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1503,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1504,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1505,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1506,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-b"
   },
   {
-    id: 16,
+    id: 4,
     name: "team7",
     description: "Smart Parking System",
     longDescription: "The Internet of Things (IoT)-based Battery Monitoring System using Arduino is designed to remotely monitor the status and performance of batteries in real-time, enhancing safety, efficiency, and reliability. This system continuously measures key battery parameters such as voltage, current, temperature, and state of charge (SoC) using appropriate sensors interfaced with an Arduino microcontroller. The collected data is then transmitted to an IoT platform (like Blynk or Thingspeak) via a Wi-Fi module (e.g., ESP8266), enabling users to access live battery statistics through a web or mobile application. Alerts for abnormal conditions such as overcharging, deep discharging, or overheating are also generated to prevent damage and extend battery lifespan. This project is particularly useful for remote energy systems, electric vehicles, and UPS setups, providing an effective and low-cost solution for battery health monitoring and maintenance.",
@@ -437,41 +873,99 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 1601, name: 'Person 1', role: '', image: '' },
-      { id: 1602, name: 'Person 2', role: '', image: '' },
-      { id: 1603, name: 'Person 3', role: '', image: '' },
-      { id: 1604, name: 'Person 4', role: '', image: '' },
-      { id: 1605, name: 'Person 5', role: '', image: '' },
-      { id: 1606, name: 'Person 6', role: '', image: '' },
-      { id: 1607, name: 'Person 7', role: '', image: '' },
-      { id: 1608, name: 'Person 8', role: '', image: '' }
+      {
+        id: 1601,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1602,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1603,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1604,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1605,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1606,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
-    ]
+    ],
+    section: "eee-b"
   },
   {
-    id: 17,
-    name: "team8",
-    description: "Smart Blind Stick",
-    longDescription: "CloudCast is creating a hyperlocal weather prediction system that provides precise forecasts for small geographic areas. By combining data from distributed weather sensors, satellite imagery, and machine learning algorithms, our system can predict microclimate variations that traditional forecasting methods miss. The technology is particularly valuable for agriculture, outdoor event planning, and emergency management during severe weather events. We're also developing specialized applications for renewable energy production forecasting to help optimize solar and wind farm operations.",
-    progress: 65,
+    id: 5,
+    section: "eee-b",
+    name: "Power consumption monitoring system using ESP32",
+    description: "Power consumption monitoring system using ESP32",
+    longDescription: "The ESP32-Based Power Consumption Monitoring System is designed to monitor electricity usage in real time. It uses an ESP32, a current sensor (ACS712), and a voltage sensing circuit to measure voltage, current, and power consumption. The system helps users identify high energy-consuming appliances, reduce electricity wastage, and improve energy efficiency through continuous monitoring.",
+    progress: 50,
     leader: {
-      id: 50,
-      name: "Leader 8",
-      role: "",
+      id: 500,
+      name: "K. PRARDAVA RAO",
+      role: "24KD1A0268",
       image: "#"
     },
     members: [
-      { id: 1701, name: 'Person 1', role: '', image: '' },
-      { id: 1702, name: 'Person 2', role: '', image: '' },
-      { id: 1703, name: 'Person 3', role: '', image: '' },
-      { id: 1704, name: 'Person 4', role: '', image: '' },
-      { id: 1705, name: 'Person 5', role: '', image: '' },
-      { id: 1706, name: 'Person 6', role: '', image: '' },
-      { id: 1707, name: 'Person 7', role: '', image: '' },
-      { id: 1708, name: 'Person 8', role: '', image: '' }
+      {
+        id: 501,
+        name: "K. RISHITA",
+        role: "24KD1A0267",
+        image: ""
+      },
+      {
+        id: 502,
+        name: "L. CHARAN TEJA",
+        role: "24KD1A0270",
+        image: ""
+      },
+      {
+        id: 503,
+        name: "L. MOHAN",
+        role: "24KD1A0271",
+        image: ""
+      },
+      {
+        id: 504,
+        name: "L. DHARMENDRA",
+        role: "24KD1A0272",
+        image: ""
+      },
+      {
+        id: 505,
+        name: "L. RAVI",
+        role: "24KD1A0273",
+        image: ""
+      },
+      {
+        id: 506,
+        name: "L. SHYAM",
+        role: "24KD1A0274",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
@@ -479,7 +973,7 @@ export const teamsData: Team[] = [
     ]
   },
   {
-    id: 18,
+    id: 6,
     name: "team9",
     description: "Sample Description",
     longDescription: "Sample Long Description.",
@@ -491,19 +985,384 @@ export const teamsData: Team[] = [
       image: "#"
     },
     members: [
-      { id: 1801, name: 'Person 1', role: '', image: '' },
-      { id: 1802, name: 'Person 2', role: '', image: '' },
-      { id: 1803, name: 'Person 3', role: '', image: '' },
-      { id: 1804, name: 'Person 4', role: '', image: '' },
-      { id: 1805, name: 'Person 5', role: '', image: '' },
-      { id: 1806, name: 'Person 6', role: '', image: '' },
-      { id: 1807, name: 'Person 7', role: '', image: '' },
-      { id: 1808, name: 'Person 8', role: '', image: '' }
+      {
+        id: 1801,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1802,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1803,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1804,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1805,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 1806,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
+    ],
+    projectImages: [
+      "#",
+      "#"
+    ],
+    section: "eee-b"
+  },
+  {
+    id: 7,
+    section: "eee-b",
+    name: "FOOTSTEP POWER GENERATION",
+    description: "FOOTSTEP POWER GENERATION",
+    longDescription: "Footstep Power Generation is a system that converts the mechanical energy of human footsteps into electrical energy. The problem identified is the wastage of energy produced while walking in crowded areas. The proposed solution uses piezoelectric sensors to generate electricity from foot pressure. Technologies used include piezoelectric sensors, energy storage batteries, and voltage regulation circuits. The expected outcome is clean, renewable, and eco-friendly power generation for small electrical applications.",
+    progress: 50,
+    leader: {
+      id: 700,
+      name: "P.Dileep",
+      role: "24KD1A0296",
+      image: "#"
+    },
+    members: [
+      {
+        id: 701,
+        name: "P.Rajeev",
+        role: "24KD1A0293",
+        image: ""
+      },
+      {
+        id: 702,
+        name: "P.Vamsi",
+        role: "24KD1A0295",
+        image: ""
+      },
+      {
+        id: 703,
+        name: "P.Hemanth",
+        role: "24KD1A0297",
+        image: ""
+      },
+      {
+        id: 704,
+        name: "P.Hemanth",
+        role: "24KD1A02A0",
+        image: ""
+      },
+      {
+        id: 705,
+        name: "R.Sagar",
+        role: "24KD1A02A2",
+        image: ""
+      },
+      {
+        id: 706,
+        name: "R.Vinay kumar",
+        role: "24KD1A02A4",
+        image: ""
+      }
     ],
     projectImages: [
       "#",
       "#"
     ]
+  },
+  {
+    id: 8,
+    name: "Team 20",
+    description: "Sample Description",
+    longDescription: "Sample Long Description.",
+    progress: 50,
+    leader: {
+      id: 200,
+      name: "Leader 20",
+      role: "",
+      image: "#"
+    },
+    members: [
+      {
+        id: 2001,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2002,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2003,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2004,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2005,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2006,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
+    ],
+    projectImages: [
+      "#",
+      "#"
+    ],
+    section: "eee-b"
+  },
+  {
+    id: 9,
+    section: "eee-b",
+    name: "PATS TRANSFORMABLE WHEELS",
+    description: "PATS Transformable Wheels",
+    longDescription: "The PATS Transformable Wheels project aims to improve vehicle movement on different terrains where conventional wheels may face difficulties. The proposed wheel can transform its shape to provide better traction, stability, and mobility on rough or uneven surfaces. This project uses mechanical design and pneumatic actuation technology to enable wheel transformation. The expected outcome is improved vehicle performance, better adaptability to different terrains, and enhanced efficiency for applications such as rescue, exploration, and off-road transportation.",
+    progress: 50,
+    leader: {
+      id: 900,
+      name: "BHOGAPURAPU MANOJ KUMAR",
+      role: "25KD5A0202",
+      image: "#"
+    },
+    members: [
+      {
+        id: 901,
+        name: "VARANASI JASWANTH",
+        role: "24KD1A02C7",
+        image: ""
+      },
+      {
+        id: 902,
+        name: "YADLA UDAYA SRI",
+        role: "24KD1A02C8",
+        image: ""
+      },
+      {
+        id: 903,
+        name: "BEVARA SRIKAR",
+        role: "25KD5A0201",
+        image: ""
+      },
+      {
+        id: 904,
+        name: "CHINTHADA NAVYA",
+        role: "25KD5A0203",
+        image: ""
+      },
+      {
+        id: 905,
+        name: "GEDDAM MANISHA",
+        role: "25KD5A0204",
+        image: ""
+      },
+      {
+        id: 906,
+        name: "KOPPALA CHANDINI",
+        role: "25KD5A0206",
+        image: ""
+      }
+    ],
+    projectImages: [
+      "#",
+      "#"
+    ]
+  },
+  {
+    id: 10,
+    name: "Smart Traffic Light Controller",
+    description: "Smart Traffic Light Controller for Emergency Vehicles",
+    longDescription: "A Smart Traffic Light Controller for Emergency Vehicles gives priority to ambulances, fire trucks, and police vehicles at traffic signals. Using sensors or cameras, it detects approaching emergency vehicles and automatically turns the signal green. This reduces delays, improves traffic flow, enables faster emergency response, and helps save lives during critical situations. 🚑🚦",
+    progress: 50,
+    leader: {
+      id: 220,
+      name: "MADASI DINESH",
+      role: "25kd5a0208",
+      image: "#"
+    },
+    members: [
+      {
+        id: 2201,
+        name: "LAKKOJU PUJITHA",
+        role: "25kd5a0207",
+        image: ""
+      },
+      {
+        id: 2202,
+        name: "NATTA ARPITHA LILLY",
+        role: "25kd5a0209",
+        image: ""
+      },
+      {
+        id: 2203,
+        name: "RAVADA SAIKUMAR",
+        role: "25kd5a0210",
+        image: ""
+      },
+      {
+        id: 2204,
+        name: "VANKARA BHANU PRASAD",
+        role: "25kd5a0211",
+        image: ""
+      },
+      {
+        id: 2205,
+        name: "VUPPALA PAVAN KUMAR",
+        role: "25kd5a0212",
+        image: ""
+      },
+      {
+        id: 2206,
+        name: "CHAPPA YASWANTH KUMAR",
+        role: "25kd5a0213",
+        image: ""
+      }
+    ],
+    projectImages: [
+      "#",
+      "#"
+    ],
+    section: "eee-b"
+  },
+  {
+    id: 11,
+    name: "Team 23",
+    description: "Sample Description",
+    longDescription: "Sample Long Description.",
+    progress: 50,
+    leader: {
+      id: 230,
+      name: "Leader 23",
+      role: "",
+      image: "#"
+    },
+    members: [
+      {
+        id: 2301,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2302,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2303,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2304,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2305,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2306,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
+    ],
+    projectImages: [
+      "#",
+      "#"
+    ],
+    section: "eee-b"
+  },
+  {
+    id: 12,
+    name: "Team 24",
+    description: "Sample Description",
+    longDescription: "Sample Long Description.",
+    progress: 50,
+    leader: {
+      id: 240,
+      name: "Leader 24",
+      role: "",
+      image: "#"
+    },
+    members: [
+      {
+        id: 2401,
+        name: "Person 1",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2402,
+        name: "Person 2",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2403,
+        name: "Person 3",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2404,
+        name: "Person 4",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2405,
+        name: "Person 5",
+        role: "",
+        image: ""
+      },
+      {
+        id: 2406,
+        name: "Person 6",
+        role: "",
+        image: ""
+      }
+    ],
+    projectImages: [
+      "#",
+      "#"
+    ],
+    section: "eee-b"
   }
 ];
 

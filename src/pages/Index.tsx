@@ -107,7 +107,7 @@ const Index = () => {
             {/* Elegant Hero Metrics Showcase */}
             <div className="mt-20 grid grid-cols-3 max-w-3xl mx-auto p-8 bg-slate-900/50 backdrop-blur-lg rounded-3xl border border-slate-800/80 text-center shadow-[0_10px_40px_rgba(0,0,0,0.2)] animate-on-load opacity-0">
               <div className="border-r border-slate-800/80 px-2">
-                <p className="text-3xl md:text-5xl font-black text-white tracking-tight">18</p>
+                <p className="text-3xl md:text-5xl font-black text-white tracking-tight">24</p>
                 <p className="text-[10px] md:text-xs text-slate-400 font-bold uppercase tracking-widest mt-2">Student Teams</p>
               </div>
               <div className="border-r border-slate-800/80 px-2">
@@ -115,8 +115,8 @@ const Index = () => {
                 <p className="text-[10px] md:text-xs text-slate-400 font-bold uppercase tracking-widest mt-2">EEE Undergrads</p>
               </div>
               <div className="px-2">
-                <p className="text-3xl md:text-5xl font-black text-white tracking-tight">1</p>
-                <p className="text-[10px] md:text-xs text-slate-400 font-bold uppercase tracking-widest mt-2">Lendi EEE-A Hub</p>
+                <p className="text-3xl md:text-5xl font-black text-white tracking-tight">2</p>
+                <p className="text-[10px] md:text-xs text-slate-400 font-bold uppercase tracking-widest mt-2">EEE Sections</p>
               </div>
             </div>
           </div>
