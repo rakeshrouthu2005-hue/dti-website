@@ -234,10 +234,12 @@ const TeamDetail = () => {
                   <div className="inline-flex items-center gap-2 px-3 py-1 bg-amber-500/10 text-amber-400 border border-amber-500/20 rounded-full text-xs md:text-sm font-bold uppercase tracking-widest">
                     Team Portfolio {team.id}
                   </div>
-                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">{displayTeam.name}</h1>
+                  <h1 className="text-4xl md:text-5xl lg:text-6xl font-black tracking-tight leading-tight">{displayTeam.description || displayTeam.name}</h1>
                 </div>
                 
-                <p className="text-sm md:text-lg text-slate-300 leading-relaxed font-semibold">{displayTeam.description}</p>
+                {displayTeam.name !== displayTeam.description && !displayTeam.name.toLowerCase().startsWith('team') && (
+                  <p className="text-sm md:text-lg text-slate-300 leading-relaxed font-semibold">{displayTeam.name}</p>
+                )}
                 
                 {/* Progress bar metrics */}
                 <div className="pt-6 space-y-3 max-w-xl">

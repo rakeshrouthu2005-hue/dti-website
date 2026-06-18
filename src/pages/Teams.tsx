@@ -137,15 +137,15 @@ const Teams = () => {
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                {Array.from({ length: 12 }).map((_, idx) => {
+                {Array.from({ length: currentSection === 'eee-a' ? 10 : 12 }).map((_, idx) => {
                   const sectionTeams = filteredTeams.filter(t => t.section === currentSection);
-                  const team = sectionTeams[idx];
+                  const team = sectionTeams.find(t => t.id === idx + 1);
                   return team ? (
                     <TeamCard
                       key={`${currentSection}-team-${team.id}`}
                       id={team.id}
                       displayId={idx + 1}
-                      name={team.name}
+                      name={team.description || team.name}
                       progress={team.progress}
                       section={currentSection}
                     />
